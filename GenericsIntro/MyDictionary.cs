@@ -13,7 +13,6 @@ namespace GenericsIntro
             keys = new TKey[0];
             values = new TValue[0];
         }
-
         public void Add(TKey key, TValue value)
         {
             TKey[] tempKeyArray = keys;
@@ -30,6 +29,5 @@ namespace GenericsIntro
             keys[keys.Length - 1] = key;
             values[values.Length - 1] = value;
         }
-
     }
 }

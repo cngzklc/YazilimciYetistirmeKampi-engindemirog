@@ -8,8 +8,7 @@ namespace GenericsIntro
         static void Main(string[] args)
         {
             //MyList<int> myList = new MyList<int>();
-            MyList<int> mylist = new MyList<int>();
-            
+            MyList<int> mylist = new MyList<int>();          
 
         }
     }
