@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace InterfaceAbstractDemo1.MernisServiceReference {
+namespace InterfaceAbstractDemo.MernisServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -17,10 +17,10 @@ namespace InterfaceAbstractDemo1.MernisServiceReference {
         
         // CODEGEN: Generating message contract since element name Ad from namespace http://tckimlik.nvi.gov.tr/WS is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula", ReplyAction="*")]
-        InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponse TCKimlikNoDogrula(InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest request);
+        InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponse TCKimlikNoDogrula(InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula", ReplyAction="*")]
-        System.Threading.Tasks.Task<InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest request);
+        System.Threading.Tasks.Task<InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace InterfaceAbstractDemo1.MernisServiceReference {
     public partial class TCKimlikNoDogrulaRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TCKimlikNoDogrula", Namespace="http://tckimlik.nvi.gov.tr/WS", Order=0)]
-        public InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequestBody Body;
+        public InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequestBody Body;
         
         public TCKimlikNoDogrulaRequest() {
         }
         
-        public TCKimlikNoDogrulaRequest(InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequestBody Body) {
+        public TCKimlikNoDogrulaRequest(InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -76,12 +76,12 @@ namespace InterfaceAbstractDemo1.MernisServiceReference {
     public partial class TCKimlikNoDogrulaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TCKimlikNoDogrulaResponse", Namespace="http://tckimlik.nvi.gov.tr/WS", Order=0)]
-        public InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponseBody Body;
+        public InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponseBody Body;
         
         public TCKimlikNoDogrulaResponse() {
         }
         
-        public TCKimlikNoDogrulaResponse(InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponseBody Body) {
+        public TCKimlikNoDogrulaResponse(InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -104,12 +104,12 @@ namespace InterfaceAbstractDemo1.MernisServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface KPSPublicSoapChannel : InterfaceAbstractDemo1.MernisServiceReference.KPSPublicSoap, System.ServiceModel.IClientChannel {
+    public interface KPSPublicSoapChannel : InterfaceAbstractDemo.MernisServiceReference.KPSPublicSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class KPSPublicSoapClient : System.ServiceModel.ClientBase<InterfaceAbstractDemo1.MernisServiceReference.KPSPublicSoap>, InterfaceAbstractDemo1.MernisServiceReference.KPSPublicSoap {
+    public partial class KPSPublicSoapClient : System.ServiceModel.ClientBase<InterfaceAbstractDemo.MernisServiceReference.KPSPublicSoap>, InterfaceAbstractDemo.MernisServiceReference.KPSPublicSoap {
         
         public KPSPublicSoapClient() {
         }
@@ -131,34 +131,34 @@ namespace InterfaceAbstractDemo1.MernisServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponse InterfaceAbstractDemo1.MernisServiceReference.KPSPublicSoap.TCKimlikNoDogrula(InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest request) {
+        InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponse InterfaceAbstractDemo.MernisServiceReference.KPSPublicSoap.TCKimlikNoDogrula(InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest request) {
             return base.Channel.TCKimlikNoDogrula(request);
         }
         
         public bool TCKimlikNoDogrula(long TCKimlikNo, string Ad, string Soyad, int DogumYili) {
-            InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest inValue = new InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest();
-            inValue.Body = new InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequestBody();
+            InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest inValue = new InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest();
+            inValue.Body = new InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequestBody();
             inValue.Body.TCKimlikNo = TCKimlikNo;
             inValue.Body.Ad = Ad;
             inValue.Body.Soyad = Soyad;
             inValue.Body.DogumYili = DogumYili;
-            InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponse retVal = ((InterfaceAbstractDemo1.MernisServiceReference.KPSPublicSoap)(this)).TCKimlikNoDogrula(inValue);
+            InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponse retVal = ((InterfaceAbstractDemo.MernisServiceReference.KPSPublicSoap)(this)).TCKimlikNoDogrula(inValue);
             return retVal.Body.TCKimlikNoDogrulaResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponse> InterfaceAbstractDemo1.MernisServiceReference.KPSPublicSoap.TCKimlikNoDogrulaAsync(InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest request) {
+        System.Threading.Tasks.Task<InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponse> InterfaceAbstractDemo.MernisServiceReference.KPSPublicSoap.TCKimlikNoDogrulaAsync(InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest request) {
             return base.Channel.TCKimlikNoDogrulaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(long TCKimlikNo, string Ad, string Soyad, int DogumYili) {
-            InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest inValue = new InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequest();
-            inValue.Body = new InterfaceAbstractDemo1.MernisServiceReference.TCKimlikNoDogrulaRequestBody();
+        public System.Threading.Tasks.Task<InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(long TCKimlikNo, string Ad, string Soyad, int DogumYili) {
+            InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest inValue = new InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequest();
+            inValue.Body = new InterfaceAbstractDemo.MernisServiceReference.TCKimlikNoDogrulaRequestBody();
             inValue.Body.TCKimlikNo = TCKimlikNo;
             inValue.Body.Ad = Ad;
             inValue.Body.Soyad = Soyad;
             inValue.Body.DogumYili = DogumYili;
-            return ((InterfaceAbstractDemo1.MernisServiceReference.KPSPublicSoap)(this)).TCKimlikNoDogrulaAsync(inValue);
+            return ((InterfaceAbstractDemo.MernisServiceReference.KPSPublicSoap)(this)).TCKimlikNoDogrulaAsync(inValue);
         }
     }
 }

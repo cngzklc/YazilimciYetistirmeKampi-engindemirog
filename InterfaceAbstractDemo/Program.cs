@@ -1,14 +1,14 @@
-﻿using InterfaceAbstractDemo1.Abstract;
-using InterfaceAbstractDemo1.Concrete;
-using InterfaceAbstractDemo1.Entities;
-using InterfaceAbstractDemo1.Adapter;
+﻿using InterfaceAbstractDemo.Abstract;
+using InterfaceAbstractDemo.Concrete;
+using InterfaceAbstractDemo.Entities;
+using InterfaceAbstractDemo.Adapter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterfaceAbstractDemo1
+namespace InterfaceAbstractDemo
 {
     class Program
     {

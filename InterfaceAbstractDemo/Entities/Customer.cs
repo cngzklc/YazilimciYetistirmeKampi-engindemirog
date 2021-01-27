@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InterfaceAbstractDemo1.Entities
+namespace InterfaceAbstractDemo.Entities
 {
     public class Customer
     {

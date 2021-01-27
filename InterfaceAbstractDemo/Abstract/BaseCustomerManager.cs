@@ -1,9 +1,9 @@
-﻿using InterfaceAbstractDemo1.Entities;
+﻿using InterfaceAbstractDemo.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace InterfaceAbstractDemo1.Abstract
+namespace InterfaceAbstractDemo.Abstract
 {
     public abstract class BaseCustomerManager : ICustomerService
     {

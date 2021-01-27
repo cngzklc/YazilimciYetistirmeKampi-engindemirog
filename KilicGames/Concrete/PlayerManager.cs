@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace KilicGames.Concrete
 {
-    public class PlayerManager:IPlayerService
+    public class PlayerManager:BasePlayerManager
     {
         private IPlayerCheckService _playerCheckService;
 
@@ -17,19 +17,41 @@ namespace KilicGames.Concrete
             _playerCheckService = playerCheckService;
         }
 
-        public void Add(IPerson person)
+        public override void Add(Player player)
         {
-            throw new NotImplementedException();
+            if (_playerCheckService.CheckIfRealPerson(player))
+            {
+                base.Add(player);
+            }
+            else
+            {
+                Console.WriteLine("Geçerli kişi değil");
+                //throw new Exception("Not a valid person");//Gerçerli bir kişi değil
+            }
         }
-
-        public void Delete(IPerson person)
+        public override void Delete(Player player)
         {
-            throw new NotImplementedException();
+            if (_playerCheckService.CheckIfRealPerson(player))
+            {
+                base.Delete(player);
+            }
+            else
+            {
+                Console.WriteLine("Geçerli kişi değil");
+                //throw new Exception("Not a valid person");//Gerçerli bir kişi değil
+            }
         }
-
-        public void Update(IPerson person)
+        public override void Update(Player player)
         {
-            throw new NotImplementedException();
+            if (_playerCheckService.CheckIfRealPerson(player))
+            {
+                base.Update(player);
+            }
+            else
+            {
+                Console.WriteLine("Geçerli kişi değil");
+                //throw new Exception("Not a valid person");//Gerçerli bir kişi değil
+            }
         }
     }
 }

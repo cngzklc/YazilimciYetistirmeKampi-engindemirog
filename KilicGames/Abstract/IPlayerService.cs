@@ -9,9 +9,9 @@ namespace KilicGames.Abstract
 {
     public interface IPlayerService
     {
-        void Add(IPerson person);
-        void Update(IPerson person);
-        void Delete(IPerson person);
+        void Add(Player person);
+        void Update(Player person);
+        void Delete(Player person);
 
     }
 }

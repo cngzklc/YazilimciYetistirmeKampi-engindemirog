@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IPerson.cs" />
+    <Compile Include="Abstract\BasePlayerManager.cs" />
     <Compile Include="Adapter\NewMernisServiceAdapter.cs" />
     <Compile Include="Adapter\MernisServiceAdapter.cs" />
     <Compile Include="Abstract\IPlayerCheckService.cs" />

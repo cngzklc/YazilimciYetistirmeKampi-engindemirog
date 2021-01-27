@@ -1,9 +1,9 @@
-﻿using InterfaceAbstractDemo1.Abstract;
-using InterfaceAbstractDemo1.Entities;
-using InterfaceAbstractDemo1.MernisServiceReference;
+﻿using InterfaceAbstractDemo.Abstract;
+using InterfaceAbstractDemo.Entities;
+using InterfaceAbstractDemo.MernisServiceReference;
 using System;
 
-namespace InterfaceAbstractDemo1.Adapter
+namespace InterfaceAbstractDemo.Adapter
 {
     public class MernisServiceAdapter : ICustomerCheckService
     {

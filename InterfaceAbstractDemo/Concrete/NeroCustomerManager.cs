@@ -1,17 +1,17 @@
-﻿using InterfaceAbstractDemo1.Abstract;
-using InterfaceAbstractDemo1.Entities;
+﻿using InterfaceAbstractDemo.Abstract;
+using InterfaceAbstractDemo.Entities;
 using System;
 
-namespace InterfaceAbstractDemo1.Concrete
+namespace InterfaceAbstractDemo.Concrete
 {
     public class NeroCustomerManager : BaseCustomerManager
     {
         #region Nero kimlik doğrulama istemediği için aşağıdaki kodlara gerek yok.
-        //private ICustomerCheckService _customerCheckService;
-        //public NeroCustomerManager(ICustomerCheckService customerCheckService)
-        //{
-        //    _customerCheckService = customerCheckService;
-        //}
+        private ICustomerCheckService _customerCheckService;
+        public NeroCustomerManager(ICustomerCheckService customerCheckService)
+        {
+            _customerCheckService = customerCheckService;
+        }
         //public override void Save(Customer customer)
         //{
         //    if (_customerCheckService.CheckIfRealPerson(customer))

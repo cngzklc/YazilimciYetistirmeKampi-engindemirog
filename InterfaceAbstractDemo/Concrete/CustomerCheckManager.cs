@@ -1,10 +1,10 @@
-﻿using InterfaceAbstractDemo1.Abstract;
-using InterfaceAbstractDemo1.Entities;
+﻿using InterfaceAbstractDemo.Abstract;
+using InterfaceAbstractDemo.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace InterfaceAbstractDemo1.Concrete
+namespace InterfaceAbstractDemo.Concrete
 {
     public class CustomerCheckManager : ICustomerCheckService
     {
