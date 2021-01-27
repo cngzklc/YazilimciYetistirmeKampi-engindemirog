@@ -23,7 +23,8 @@ namespace InterfaceAbstractDemo1.Concrete
             }
             else
             {
-                throw new Exception("Not a valid person");//Gerçerli bir kişi değil
+                Console.WriteLine("Geçerli kişi değil");
+                //throw new Exception("Not a valid person");//Gerçerli bir kişi değil
             }
         }
 
