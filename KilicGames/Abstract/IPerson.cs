@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KilicGames.Anstract
+namespace KilicGames.Abstract
 {
-    public interface IProduct
+    public interface IPerson
     {
-
     }
 }

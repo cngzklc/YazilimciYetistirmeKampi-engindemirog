@@ -1,4 +1,4 @@
-﻿using KilicGames.Anstract;
+﻿using KilicGames.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KilicGames.Entities
 {
-    public class Game : IProduct
+    public class Game
     {
         private double PriceWithhKDV ;
         public int Id { get; set; }

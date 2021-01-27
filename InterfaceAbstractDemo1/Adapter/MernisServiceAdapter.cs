@@ -7,6 +7,7 @@ namespace InterfaceAbstractDemo1.Adapter
 {
     public class MernisServiceAdapter : ICustomerCheckService
     {
+        // "https://tckimlik.nvi.gov.tr/service/kpspublic.asmx?wsdl" adresini Project\Service Reference\ kısmına yapıştırarak ekliyoruz.
         public bool CheckIfRealPerson(Customer customer)
         {
             KPSPublicSoapClient client = new KPSPublicSoapClient();

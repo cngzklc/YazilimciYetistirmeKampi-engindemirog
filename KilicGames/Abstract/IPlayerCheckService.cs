@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KilicGames.Anstract
+namespace KilicGames.Abstract
 {
-    interface IPersonCheckService
+    public interface IPlayerCheckService
     {
-        bool CheckIfRealPerson(Person person);
+        bool CheckIfRealPerson(Player customer);
     }
 }

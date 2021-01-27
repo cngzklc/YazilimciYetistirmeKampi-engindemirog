@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KilicGames.Adapter
+namespace KilicGames.Concrete
 {
-    class EdevletServiceAdaper
+    class PlayerCheckManager
     {
     }
 }
