@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KilicGames
+namespace KilicGames.Anstract
 {
-    class Program
+    public interface IProduct
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }

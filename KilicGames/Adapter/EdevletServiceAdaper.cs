@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KilicGames
+namespace KilicGames.Adapter
 {
-    class Program
+    class EdevletServiceAdaper
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
