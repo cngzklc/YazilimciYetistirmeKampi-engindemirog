@@ -1,7 +1,7 @@
-﻿using KilicGames.Abstract;
-using KilicGames.Adapter;
-using KilicGames.Concrete;
-using KilicGames.Entities;
+﻿using KilicGames.Player.Adapter;
+using KilicGames.Player.Concrete;
+using KilicGames.Player.Abstract;
+using KilicGames.Player.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace KilicGames
     {
         static void Main(string[] args)
         {
-            Player player1 = new Player
+            Person player1 = new Person
             {
                 Id = 1,
                 NationalityId = "25684908800",

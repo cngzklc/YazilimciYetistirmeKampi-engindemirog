@@ -45,21 +45,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\BasePlayerManager.cs" />
-    <Compile Include="Adapter\NewMernisServiceAdapter.cs" />
-    <Compile Include="Adapter\MernisServiceAdapter.cs" />
-    <Compile Include="Abstract\IPlayerCheckService.cs" />
-    <Compile Include="Abstract\IPlayerService.cs" />
-    <Compile Include="Concrete\PlayerCheckManager.cs" />
-    <Compile Include="Concrete\PlayerManager.cs" />
+    <Compile Include="Campaings\Abstract\ICampaingService.cs" />
+    <Compile Include="Campaings\Abstract\ICampaing.cs" />
+    <Compile Include="Campaings\Concrete\CampaingManager.cs" />
+    <Compile Include="Campaings\Entities\Campaing.cs" />
+    <Compile Include="Games\Abstract\IGameCategoryService.cs" />
+    <Compile Include="Games\Abstract\IGameService.cs" />
+    <Compile Include="Games\Concrete\GameCategoryManager.cs" />
+    <Compile Include="Games\Concrete\GameManager.cs" />
+    <Compile Include="Player\Abstract\BasePlayerManager.cs" />
+    <Compile Include="Player\Abstract\IPerson.cs" />
+    <Compile Include="Player\Adapter\MernisServiceAdapter.cs" />
+    <Compile Include="Player\Abstract\IPlayerCheckService.cs" />
+    <Compile Include="Player\Abstract\IPlayerService.cs" />
+    <Compile Include="Player\Adapter\PlayerCheckService.cs" />
+    <Compile Include="Player\Concrete\PlayerManager.cs" />
     <Compile Include="Connected Services\MernisServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Game.cs" />
-    <Compile Include="Entities\GameCategory.cs" />
-    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Games\Entities\GameCategory.cs" />
+    <Compile Include="Games\Abstract\IProduct.cs" />
+    <Compile Include="Games\Abstract\IGameCategory.cs" />
+    <Compile Include="Games\Entities\Game.cs" />
+    <Compile Include="Player\Entities\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -88,6 +98,13 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Ödev5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sales\Abstract\" />
+    <Folder Include="Sales\Concrete\" />
+    <Folder Include="Sales\Entities\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

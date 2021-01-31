@@ -1,13 +1,13 @@
-﻿using KilicGames.Abstract;
+﻿using KilicGames.Player.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KilicGames.Entities
+namespace KilicGames.Player.Entities
 {
-    public class Player
+    public class Person:IPerson
     {
         public int Id { get; internal set; }
         public string NationalityId { get; internal set; }

@@ -1,14 +1,14 @@
-﻿using KilicGames.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KilicGames.Player.Entities;
 
-namespace KilicGames.Abstract
+namespace KilicGames.Player.Abstract
 {
     public interface IPlayerCheckService
     {
-        bool CheckIfRealPerson(Player customer);
+        bool CheckIfRealPerson(Person person);
     }
 }

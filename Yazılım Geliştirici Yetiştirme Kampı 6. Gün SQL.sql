@@ -36,3 +36,7 @@
 
 --Select * from Customers c left join Orders o on c.CustomerID = o.CustomerID where o.CustomerID is null -- Burada ise; üst tarafdaki sorgu haricinde where o.CustomersID is null kullanıldığı için:
 --Sipariş listesinde, sipariş vermeyen müşteriler, müşteri tablosu ile sipariş tablosu birleştirilerek listelenmiştir.
+
+--Select ProductName Ürün, Sum(od.UnitPrice*od.Quantity) as KazanılanToplamPara
+--from Products as p inner join OrderDetails as od ON p.ProductID=od.ProductID inner join Orders as o ON o.OrderID=od.OrderID 
+--group by ProductName order by ProductName
